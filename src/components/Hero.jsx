@@ -23,10 +23,11 @@ const Hero = ({ imageSrc }) => {
 
   return (
     <section className="hero-section" style={{ backgroundColor: bgColor }}>
-      <div className="image-container">
+      <div className="hero-container">
         <img className="hero-image" ref={imgRef} src={imageSrc} alt="IC Tech Banner" crossOrigin="anonymous" />
+
+        <ButtonComponent text="Proceed" className="btn-primary" />
       </div>
-      <ButtonComponent text="Proceed" className="btn-primary" />
     </section>
   );
 };
