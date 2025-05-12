@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.header-component {
+  background-color: rgb(1, 44, 78); /* Usa il colore dominante con opacità */
+  color: white;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-component ul {
+  display: inline-block;
+}
+
+.header-component ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.header-component img {
+  vertical-align: middle;
+}
+
+.hero-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.hero-section {
+  position: relative;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  position: absolute;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+/* to fix */
+.btn-primary {
+  background-color: #0055d4aa;
+  bottom: 0%;
+  right: 0%;
+}
+
+.btn-secondary {
+  top: 10%;
+  right: 5%;
+  background-color: #6e0372aa;
+}
